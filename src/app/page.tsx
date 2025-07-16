@@ -71,7 +71,7 @@ export default function HomePage() {
                 </button>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-gray-900 mb-1">Sarah's Coffee Corner</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">SarahSarah'sapos;s Coffee Corner</h3>
                 <p className="text-sm text-gray-600 mb-2">$$ • Coffee & Tea • Breakfast • Pastries</p>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gray-600">20-30 Min</span>
@@ -197,7 +197,7 @@ export default function HomePage() {
                 </button>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-gray-900 mb-1">Bella's Bakery</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">BellaBella'sapos;s Bakery</h3>
                 <p className="text-sm text-gray-600 mb-2">$$ • Bakery • Desserts • Coffee</p>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gray-600">25-35 Min</span>
