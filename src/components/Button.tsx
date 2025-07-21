@@ -18,8 +18,8 @@ const Button: React.FC<ButtonProps> = ({
   
   const variantClasses = {
     primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500',
-    secondary: 'border border-white bg-transparent text-white hover:bg-white/10 focus:ring-white',
-    accent: 'bg-yellow-400 text-blue-600 hover:bg-yellow-300 focus:ring-yellow-400 font-semibold',
+    secondary: 'border-2 border-white bg-transparent text-white hover:bg-white/10 focus:ring-white',
+    accent: 'bg-yellow-400 text-blue-900 hover:bg-yellow-300 focus:ring-yellow-400 font-semibold',
   };
   
   const sizeClasses = {

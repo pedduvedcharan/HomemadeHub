@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({
   
   const variantClasses = {
     default: 'bg-white shadow-sm border border-gray-200',
-    feature: 'bg-surface-translucent backdrop-blur-sm border border-white/20',
+    feature: 'bg-white/10 backdrop-blur-sm border border-white/20',
     vendor: 'bg-white shadow-md border border-gray-200 hover:shadow-lg',
     menu: 'bg-white shadow-sm border border-gray-200 hover:shadow-md',
   };
