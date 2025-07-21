@@ -36,7 +36,7 @@ const QtyStepper: React.FC<QtyStepperProps> = ({
         onClick={onDecrement}
         disabled={isMinDisabled}
         className={cn(
-          'flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors',
+          'flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors',
           sizeClasses[size]
         )}
         aria-label="Decrease quantity"
@@ -52,7 +52,7 @@ const QtyStepper: React.FC<QtyStepperProps> = ({
         onClick={onIncrement}
         disabled={isMaxDisabled}
         className={cn(
-          'flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors',
+          'flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors',
           sizeClasses[size]
         )}
         aria-label="Increase quantity"

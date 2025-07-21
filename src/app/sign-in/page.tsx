@@ -28,11 +28,11 @@ export default function SignIn() {
   const isDemoMode = process.env.NEXT_PUBLIC_DEMO === 'true';
 
   return (
-    <div className="min-h-screen bg-hero-gradient flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         {/* Demo Mode Banner */}
         {isDemoMode && (
-          <div className="bg-yellow-accent text-blue-start px-4 py-3 rounded-lg mb-6 text-center font-medium">
+          <div className="bg-yellow-400 text-blue-900 px-4 py-3 rounded-lg mb-6 text-center font-medium">
             Demo Mode Active – authentication works offline
           </div>
         )}
@@ -82,13 +82,13 @@ export default function SignIn() {
               <label className="flex items-center">
                 <input
                   type="checkbox"
-                  className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                 />
                 <span className="ml-2 text-sm text-gray-600">Remember me</span>
               </label>
               <Link
                 href="/forgot-password"
-                className="text-sm text-primary-600 hover:text-primary-700 font-medium"
+                className="text-sm text-blue-600 hover:text-blue-700 font-medium"
               >
                 Forgot password?
               </Link>
@@ -107,10 +107,10 @@ export default function SignIn() {
 
           <div className="mt-8 text-center">
             <p className="text-gray-600">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link
                 href="/sign-up"
-                className="text-primary-600 hover:text-primary-700 font-medium"
+                className="text-blue-600 hover:text-blue-700 font-medium"
               >
                 Sign up
               </Link>

@@ -35,11 +35,11 @@ export default function SignUp() {
   const isDemoMode = process.env.NEXT_PUBLIC_DEMO === 'true';
 
   return (
-    <div className="min-h-screen bg-hero-gradient flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         {/* Demo Mode Banner */}
         {isDemoMode && (
-          <div className="bg-yellow-accent text-blue-start px-4 py-3 rounded-lg mb-6 text-center font-medium">
+          <div className="bg-yellow-400 text-blue-900 px-4 py-3 rounded-lg mb-6 text-center font-medium">
             Demo Mode Active – authentication works offline
           </div>
         )}
@@ -127,7 +127,7 @@ export default function SignUp() {
             {/* User Type Selection */}
             <div className="space-y-3">
               <label className="block text-sm font-medium text-gray-700">
-                I'm a...
+                I&apos;m a...
               </label>
               <div className="flex space-x-4">
                 <label className="flex items-center">
@@ -137,7 +137,7 @@ export default function SignUp() {
                     value="customer"
                     checked={userType === 'customer'}
                     onChange={(e) => setUserType(e.target.value as 'customer' | 'vendor')}
-                    className="text-primary-600 focus:ring-primary-500"
+                    className="text-blue-600 focus:ring-blue-500"
                   />
                   <span className="ml-2 text-sm text-gray-700">Customer</span>
                 </label>
@@ -148,7 +148,7 @@ export default function SignUp() {
                     value="vendor"
                     checked={userType === 'vendor'}
                     onChange={(e) => setUserType(e.target.value as 'customer' | 'vendor')}
-                    className="text-primary-600 focus:ring-primary-500"
+                    className="text-blue-600 focus:ring-blue-500"
                   />
                   <span className="ml-2 text-sm text-gray-700">Vendor</span>
                 </label>
@@ -158,16 +158,16 @@ export default function SignUp() {
             <div className="flex items-center">
               <input
                 type="checkbox"
-                className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                 required
               />
               <span className="ml-2 text-sm text-gray-600">
                 I agree to the{' '}
-                <Link href="/terms" className="text-primary-600 hover:text-primary-700">
+                <Link href="/terms" className="text-blue-600 hover:text-blue-700">
                   Terms of Service
                 </Link>{' '}
                 and{' '}
-                <Link href="/privacy" className="text-primary-600 hover:text-primary-700">
+                <Link href="/privacy" className="text-blue-600 hover:text-blue-700">
                   Privacy Policy
                 </Link>
               </span>
@@ -189,7 +189,7 @@ export default function SignUp() {
               Already have an account?{' '}
               <Link
                 href="/sign-in"
-                className="text-primary-600 hover:text-primary-700 font-medium"
+                className="text-blue-600 hover:text-blue-700 font-medium"
               >
                 Sign in
               </Link>
