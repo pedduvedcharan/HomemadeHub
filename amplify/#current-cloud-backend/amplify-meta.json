@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-homemadehub-dev-ddbcc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::417915984158:role/amplify-homemadehub-dev-ddbcc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::417915984158:role/amplify-homemadehub-dev-ddbcc-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-homemadehub-dev-ddbcc-deployment",
+      "UnauthRoleName": "amplify-homemadehub-dev-ddbcc-unauthRole",
+      "StackName": "amplify-homemadehub-dev-ddbcc",
+      "StackId": "arn:aws:cloudformation:us-east-2:417915984158:stack/amplify-homemadehub-dev-ddbcc/aed304c0-65bb-11f0-a3a7-067d561c4205",
+      "AmplifyAppId": "dsdeqz6h6z5g2"
+    }
+  }
+}
