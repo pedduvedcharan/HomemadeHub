@@ -25,13 +25,11 @@ export default function SignIn() {
     }, 1000);
   };
 
-  const isDemoMode = process.env.NEXT_PUBLIC_DEMO === 'true';
-
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         {/* Demo Mode Banner */}
-        {isDemoMode && (
+        {process.env.NEXT_PUBLIC_DEMO === 'true' && (
           <div className="bg-yellow-400 text-blue-900 px-4 py-3 rounded-lg mb-6 text-center font-medium">
             Demo Mode Active – authentication works offline
           </div>

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChefHat, User, ShoppingCart, LogOut, Bell } from 'lucide-react';
+import Image from 'next/image';
 
 // Mock data for demonstration
 const mockUser = {
@@ -28,7 +29,8 @@ const Header: React.FC = () => {
   const profile = mockProfile;
   const items = mockCartItems;
   const cartItemCount = items.reduce((sum, item) => sum + item.quantity, 0);
-  const pathname = usePathname();
+  // Removed unused variable 'pathname'
+  // const pathname = usePathname();
 
   const handleSignOut = async () => {
     // Add your sign out logic here
@@ -100,9 +102,11 @@ const Header: React.FC = () => {
                 <div className="relative group">
                   <button className="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100">
                     {profile.avatar_url ? (
-                      <img
+                      <Image
                         src={profile.avatar_url}
                         alt={profile.full_name}
+                        width={32}
+                        height={32}
                         className="h-8 w-8 rounded-full object-cover"
                       />
                     ) : (
