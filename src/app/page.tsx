@@ -1,24 +1,29 @@
 import Button from '@/components/Button';
-import Card from '@/components/Card';
 import { MapPin, Search, Clock, Star } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section with Dark Blue Gradient */}
-      <section className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 min-h-screen flex items-center">
+    <div 
+      className="min-h-screen"
+      style={{
+        background: 'linear-gradient(to right, #1e3a8a, #1e40af, #1d4ed8)',
+        minHeight: '100vh'
+      }}
+    >
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Column - Content */}
             <div className="max-w-2xl">
-              {/* Two-line Heading - Exact typography from mockup */}
+              {/* Two-line Heading */}
               <h1 className="text-6xl md:text-8xl font-black leading-tight text-white mb-8">
                 Discover<br />
-                <span className="text-yellow-400">Homemade</span> Delights
+                <span style={{ color: '#fbbf24' }}>Homemade</span> Delights
               </h1>
               
-              {/* Sub-headline - Exact text from mockup */}
+              {/* Sub-headline */}
               <p className="text-blue-100 text-xl mb-10 leading-relaxed">
                 Connect with local food vendors and enjoy authentic homemade meals delivered fresh to your door.
               </p>
@@ -54,7 +59,15 @@ export default function Home() {
             {/* Right Column - Feature Cards */}
             <div className="max-w-md space-y-8">
               {/* Feature Card 1 - Fast Delivery */}
-              <Card variant="feature" className="p-8">
+              <div 
+                className="p-8 rounded-xl"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                  backdropFilter: 'blur(12px)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)'
+                }}
+              >
                 <div className="flex items-start space-x-6">
                   <div className="w-14 h-14 bg-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Clock className="w-7 h-7 text-blue-900" />
@@ -64,10 +77,18 @@ export default function Home() {
                     <p className="text-blue-100 text-base leading-relaxed">Fresh homemade meals delivered in 30-45 minutes</p>
                   </div>
                 </div>
-              </Card>
+              </div>
               
               {/* Feature Card 2 - Quality Assured */}
-              <Card variant="feature" className="p-8">
+              <div 
+                className="p-8 rounded-xl"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                  backdropFilter: 'blur(12px)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)'
+                }}
+              >
                 <div className="flex items-start space-x-6">
                   <div className="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
                     <Star className="w-7 h-7 text-white" />
@@ -77,10 +98,18 @@ export default function Home() {
                     <p className="text-blue-100 text-base leading-relaxed">All vendors are verified with 4+ star ratings</p>
                   </div>
                 </div>
-              </Card>
+              </div>
               
               {/* Feature Card 3 - Local Community */}
-              <Card variant="feature" className="p-8">
+              <div 
+                className="p-8 rounded-xl"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                  backdropFilter: 'blur(12px)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)'
+                }}
+              >
                 <div className="flex items-start space-x-6">
                   <div className="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-7 h-7 text-white" />
@@ -90,11 +119,11 @@ export default function Home() {
                     <p className="text-blue-100 text-base leading-relaxed">Support local cooks and discover neighborhood flavors</p>
                   </div>
                 </div>
-              </Card>
+              </div>
             </div>
           </div>
           
-          {/* Bottom Stats Row - Exact from mockup */}
+          {/* Bottom Stats Row */}
           <div className="mt-20 pt-10 border-t border-white/20">
             <div className="flex justify-center space-x-16 text-white">
               <div className="text-center">
